@@ -19,7 +19,7 @@ body{
 header{
     background-color: #242424;
     color: white;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     grid-column: 1/4;
     height: 20rem;
@@ -37,7 +37,9 @@ nav{
 }
 
 nav ul{   
+    align-items: center;
     display: flex;
+    height: 8rem;
     justify-content: space-around;
     list-style: none;
     margin: auto 0 0 0;
