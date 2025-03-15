@@ -1,0 +1,209 @@
+:root{
+    --font: "Montserrat", Segoe UI, sans-serif;
+    --primary: #192BC2;
+    --secondary: #446ad1;
+    --dark: #0E0E52;
+    --white: #F4F3F1;
+}
+
+*{
+	box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: var(--primary);
+    display: flex;;
+    flex-direction: column;
+    height: 18vh;
+    justify-content: space-between;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: var(--white);
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.5rem;
+    height: 4.5rem;
+    margin: auto;
+}
+
+body {
+    font-family: var(--font);
+}
+
+
+header nav{
+    background-color: var(--dark);
+    color: var(--white);
+    height: 4rem;
+}
+
+header nav ul{
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    list-style: none;
+}
+
+header nav ul li{
+    align-content: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul a {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+main{
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 1rem;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+.card{
+    border: 0.15rem solid #b1b1b1;
+    border-radius: 0.8rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card h2{
+    align-content: center;
+    background-color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    height: 4rem;
+    text-align: center;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card ul li{
+    color: var(--dark);
+    font-size: 1.8rem;
+    list-style: disc;
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+.card ul li a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about-me-container{
+    display: grid;
+    gap: 1rem;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    height: calc(100% - 4rem);
+    padding: 1rem;
+    width: 100%;
+}
+
+.about-me-text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    grid-row: span 1;
+    justify-content: space-between;
+}
+
+.bio{
+    font-size: 1.8rem;
+}
+
+.location{
+    border-bottom: 0.1rem solid #b1b1b1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+}
+
+.about-me-pic{
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 100%;
+    width: 100%;
+}
+
+.about-me-pic img{
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-me-country{
+    display: flex;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: span 1;
+    padding: 1rem;
+}
+
+.about-me-country figure{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.about-me-country figure img{
+    height: auto;
+    width: 100%;
+}
+
+.about-me-country figure figcaption{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.about-me-country p{
+    align-content: center;
+    font-size: 1.8rem;
+    width: 70%;
+}
+
+footer{
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    justify-content: center;
+    height: 12vh;
+}
+
+#lastModified{
+    color: yellow;
+    font-size: 1.5rem;
+}
