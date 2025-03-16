@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --font: "Montserrat", Segoe UI, sans-serif;
     --primary: #192BC2;
@@ -64,6 +66,11 @@ header nav ul li a{
     text-decoration: none;
 }
 
+header nav ul li a:hover{
+    text-decoration: underline overline;
+    font-weight: bold;
+}
+
 header nav ul a {
     font-size: 1.8rem;
     color: var(--white);
@@ -76,7 +83,7 @@ main{
     height: 70vh;
     margin: 0 auto;
     padding: 1rem;
-    width: 90%;
+    max-width: 90%;
 }
 
 .card{
