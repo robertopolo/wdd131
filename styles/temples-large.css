@@ -1,0 +1,33 @@
+@media (min-width: 760px) {
+    header{
+        align-items: center;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: block;
+        padding: 0;
+        width: 30rem;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;;
+    }
+
+    header nav ul li{
+        margin: auto;
+    }
+
+    header nav ul li a{
+        font-family: var(--primary-font);
+        font-size: 1.5rem;
+    }
+
+    button{
+        display: none;
+    }
+}
