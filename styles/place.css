@@ -46,7 +46,7 @@ main picture{
     height: calc(100vh - 8rem);
     overflow: hidden;
     padding-top: 2rem;
-    width: 100wv;
+    width: 100vw;
 }
 
 main picture img{
