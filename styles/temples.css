@@ -132,12 +132,12 @@ footer{
     display: flex;
     flex-direction: column;
     font-family: var(--primary-font);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     justify-content: center;
     height: 12vh;
 }
 
 #lastModified{
     color: yellow;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-font: "Montserrat", Segoe UI, sans-serif;
+    --secondary-font: "Roboto", Segoe UI, sans-serif;
+    --yellow: #FFCD00;
+    --blue: #003087;
+    --red: #C8102E;
+    --dark: #0E0E52;
+    --white: #F4F3F1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+header{
+    align-items: center;
+    background-color: var(--yellow);
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+}
+
+h1{
+    color: var(--dark);
+    font-family: var(--primary-font);
+    font-size: 4rem;
+    text-align: center;
+}
+
+main{
+    background-color: var(--blue);
+}
+
+main picture{
+    display: block;
+    height: calc(100vh - 8rem);
+    overflow: hidden;
+    padding-top: 2rem;
+    width: 100wv;
+}
+
+main picture img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+main section{
+    border-top: 0.5rem solid var(--red);
+    background-color: var(--white);
+    height: calc(100vh - 12vh);
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card:first-child{
+    border-bottom: .1rem solid #C8102E;
+}
+
+.card h2{
+    font-family: var(--primary-font);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.card table{
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+}
+
+.card table th{
+    text-align: right;
+    padding: 0.3rem;
+}
+
+.card table th::after{
+    content: ":";
+    font-weight: bold;
+    
+}
+
+.card img{
+    width: 5rem;
+} 
+
+footer{
+    align-items: center;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    justify-content: center;
+    height: 12vh;
+}
+
+#lastModified{
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px){
+    main{
+        position: relative;
+    }
+
+    main picture, main section{
+        height: calc(100vh - 12vh - 8rem)
+    }
+
+    main section {
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+    }
+
+    .card{
+        background-color: var(--white);
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.5rem var(--dark);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0.85;
+        position: absolute;
+        width: 22rem;
+    }
+
+    .card h2{
+        color: var(--white);
+    }
+
+    .card-header{
+        background-color: var(--blue);
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.5rem var(--dark);
+        display: flex;
+        flex-direction: row;
+        height: 6rem;
+        padding: 1rem;
+        position: relative;
+        top: 1rem;
+        left: -1rem;
+        width: 23rem;
+    }
+
+    .card-header img:hover{
+        transform: scale(1.1);
+    }
+
+    .card table{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .card table th, td{
+        height: 3rem;
+    }
+
+    .card:first-child{
+        border: 0;
+        height: 35rem;
+        left: 2rem;
+        top: 3rem;
+    }
+
+    .card:nth-child(2){
+        bottom: 3rem;
+        height: 22rem;
+        right: 2rem;
+    }
+
+    footer{
+        font-size: 2rem;
+    }
+}
