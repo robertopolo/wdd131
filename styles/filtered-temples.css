@@ -1,0 +1,160 @@
+:root{
+    --primary-font: "Montserrat", Segoe UI, sans-serif;
+    --secondary-font: "Roboto", Segoe UI, sans-serif;
+    --primary: #192BC2;
+    --secondary: #446ad1;
+    --dark: #0E0E52;
+    --white: #F4F3F1;
+    --grey: #cfcfcf;
+    --light-grey: #EAEAEA;
+}
+
+*{
+	box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+.header-container{
+    align-items: center;
+    background-color: var(--primary);
+    display: flex;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-container h1{
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header-container button{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 0;
+    background: none;
+    color: var(--white);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.header-container button::before {
+    content: "☰";
+}
+
+.header-container button.opened::before {
+    content: "❌";
+}
+
+
+nav{
+    background-color: var(--primary);
+    display: none;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.opened{
+    display: block;
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 0.8rem;
+}
+
+nav ul li a{
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+main h2{
+    color: var(--dark);
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card{
+    align-items: center;
+    background-color: var(--light-grey);;
+    border: 0.15rem solid var(--grey);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.card h3{
+    color: var(--dark);
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card p{
+    font-size: 1.3rem;
+}
+
+.card p span{
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card img{
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 1);
+    height: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+footer{
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    justify-content: center;
+    height: 8rem;
+    margin-top: 1rem;
+}
+
+#lastModified{
+    color: yellow;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+
+table{
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    margin: 10rem auto;
+    width: 60%;
+    
+    caption{
+        caption-side: bottom;
+        font-size: smaller;
+    }
+
+    th, td{
+        padding: 0.5rem 1rem;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    thead th,
+    tbody td {
+        text-align: center;
+    }
+
+    thead {
+        color: #fff;
+        background: #000;
+    
+        th {
+          padding: 1rem;
+          font-size: larger;
+        }
+    
+        tr:nth-last-child(1) {
+          background-color: #333;
+        }
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+}
+
+.blank{
+    background-color: #000;
+}
