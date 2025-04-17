@@ -57,7 +57,7 @@ function addSubmition() {
   }
 }
 
-if (['wdd131/review.html', '/review.html'].includes(location.pathname)) {
+if (['/wdd131/review.html', '/review.html'].includes(location.pathname)) {
   addSubmition();
 } else {
   addOptions();
