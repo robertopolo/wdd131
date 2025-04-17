@@ -56,7 +56,7 @@ function addSubmition() {
     reviewCount = Number(count) + 1;
     localStorage.setItem('count', reviewCount);
 
-    reviewCounter.textContent = `(git ${reviewCount} visits)`;
+    reviewCounter.textContent = `(${reviewCount} visits)`;
   }
 }
 
