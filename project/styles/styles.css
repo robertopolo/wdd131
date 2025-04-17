@@ -1,0 +1,269 @@
+:root{
+    --primary-font: 'PT Sans', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --primary: #2dc3e5;
+    --secondary: #0a4346;
+    --dark: #0E0E52;
+    --white: #F4F3F1;
+    --grey: #cfcfcf;
+    --light-grey: #EAEAEA;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+header{
+    background-image: url('../images/techstore.webp');
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--primary-font);
+}
+
+a, li, p{
+    font-family: var(--secondary-font);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navigation-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navigation-bar {
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+}
+
+.logo{
+    color: var(--white)
+}
+
+.logo-text{
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.logo-text span{
+    font-weight: 700;
+}
+
+.navigation ul li{
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.navigation-link {
+    display: block;
+    color: var(--white);
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero-text{
+    align-content: center;
+    background-color: rgba(0,0,0,.7);
+    border-radius: .5rem;
+    color: var(--white);
+    height: 7rem;
+    margin: 15rem auto auto auto;
+    text-align: center;
+    text-decoration: none;
+    width: 35rem;
+}
+
+main{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.about-us{
+    align-items: center;
+    box-shadow: .1rem .1rem 1rem #969696;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%
+}
+
+.about-us p{
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.card-container {
+    display: grid;
+    font-family: var(--secondary-font);
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card{
+    align-items: center;
+    background-color: var(--light-grey);;
+    border: 0.15rem solid var(--grey);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.card h3{
+    color: var(--dark);
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card p{
+    font-size: 1.3rem;
+}
+
+.card p span{
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card img{
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 1);
+    height: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+footer{
+    align-items: center;
+    background-color: #040202;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: 400;
+    justify-content: space-between;
+    height: 8rem;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+footer span:nth-child(2){
+    font-weight: 700;
+}
+
+footer a img{
+    height: 3.5rem;
+}
+
+.review-container{
+	align-content: center;
+	color: var(--dark);
+	font-family: var(--secondary-font);
+	font-size: 3rem;
+	font-weight: bold;
+	height: calc(100vh - 14rem);
+	text-align: center;
+}
+
+main form{
+	background-color: #d1d1d1;
+	border-radius: .3rem;
+	font-family: var(--secondary-font);
+	height: 40rem;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+#username, #usermail, #userphone, textarea{
+	border: none;
+	border-radius: .3rem;
+	font-family: var(--font-secondary);
+	font-size: 1rem;
+	height: var(--height);
+	margin-top: .5rem;
+	padding: .5rem;
+	width: 100%;
+}
+
+.title{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.title span{
+	color: var(--secondary);
+	font-size: 1rem;
+	font-style: italic;
+}
+
+textarea{
+	height: 8rem;
+	padding: .5rem;
+	resize: none;
+}
+
+input[type="submit"]{
+	background-color: #ebebeb;
+	border: .1rem solid #7d7d7d;
+	border-radius: .5rem;
+	color: var(--dark);
+	font-size: 2rem;
+	font-weight: bold;
+	height: 4rem;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+input[type="submit"]:hover{
+	box-shadow: .1rem .1rem .8rem #333;
+}
