@@ -28,14 +28,13 @@ const products = [
 
 const year = document.getElementById('currentyear');
 const lastModified = document.getElementById('lastModified');
-
 const today = new Date();
 const lastModifiedDate = document.lastModified;
+const productsList = document.querySelector('#products');
+const reviewCounter = document.querySelector('#review-counter');
 
 year.innerText = today.getFullYear();
 lastModified.innerText = `Last modification: ${lastModifiedDate}`;
-
-const productsList = document.querySelector('#products');
 
 function addOptions() {
   products.forEach((product) => {
@@ -51,9 +50,13 @@ function addOptions() {
 }
 
 function addSubmition() {
+  let reviewCount = 0;
   if (localStorage) {
     const count = localStorage.getItem('count') || 0;
-    localStorage.setItem('count', Number(count) + 1);
+    reviewCount = Number(count) + 1;
+    localStorage.setItem('count', reviewCount);
+
+    reviewCounter.textContent = `(git ${reviewCount} visits)`;
   }
 }
 
@@ -62,3 +65,4 @@ if (['/wdd131/review.html', '/review.html'].includes(location.pathname)) {
 } else {
   addOptions();
 }
+

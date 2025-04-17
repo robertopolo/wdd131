@@ -40,7 +40,7 @@ main{
 	width: 40%;
 }
 
-main p{
+.review-container{
 	align-content: center;
 	color: var(--dark);
 	font-family: var(--font-secondary);
