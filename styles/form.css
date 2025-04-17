@@ -1,0 +1,167 @@
+:root{
+    --font-primary: "Montserrat", Segoe UI, sans-serif;
+    --font-secondary: "Roboto", Segoe UI, sans-serif;
+    --primary: #192BC2;
+    --secondary: #446ad1;
+    --dark: #0E0E52;
+    --white: #F4F3F1;
+	--height: 3.3rem;
+}
+
+*{
+	box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+header{
+	align-content: center;
+	background-color: var(--primary);
+	height: 7rem;
+}
+
+header h1{
+	color: var(--white);
+	font-family: var(--font-primary);
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+main{
+	margin: 0 auto;
+	width: 40%;
+}
+
+main p{
+	align-content: center;
+	color: var(--dark);
+	font-family: var(--font-secondary);
+	font-size: 3rem;
+	font-weight: bold;
+	height: calc(100vh - 14rem);
+	text-align: center;
+}
+
+main form{
+	background-color: #d1d1d1;
+	border-radius: .3rem;
+	font-family: var(--font-secondary);
+	height: 59rem;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.title{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.title span{
+	color: var(--primary);
+	font-size: 1rem;
+}
+
+fieldset{
+	border: none;
+	margin: 1rem 0;
+}
+
+select, input[type="date"], textarea, #username{
+	border: none;
+	border-radius: .3rem;
+	font-family: var(--font-secondary);
+	font-size: 1rem;
+	height: var(--height);
+	margin-top: .5rem;
+	padding: .5rem;
+	width: 100%;
+}
+
+.stars{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.stars > label{
+	font-size: 1.3rem;
+
+}
+
+.features{
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+}
+
+.features label{
+	display: flex;
+	font-size: 1.2rem;
+	justify-content: start;
+	margin-top: .3rem;
+	width: 100%;
+}
+
+.features label input[type="checkbox"]{
+	height: 1.5rem;
+	margin-right: .2rem;
+	width: 1.8rem;
+}
+
+textarea{
+	height: 8rem;
+	padding: .5rem;
+	resize: none;
+}
+
+input[type="submit"]{
+	background-color: #ebebeb;
+	border: .1rem solid #7d7d7d;
+	border-radius: .5rem;
+	color: var(--dark);
+	font-size: 2rem;
+	font-weight: bold;
+	height: 4rem;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+input[type="submit"]:hover{
+	box-shadow: .1rem .1rem .8rem #333;
+}
+
+footer{
+	align-items: center;
+	background-color: var(--primary);
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-primary);
+	font-size: 1.5rem;
+	justify-content: center;
+	height: 7rem;
+}
+
+#lastModified{
+	color: yellow;
+	font-size: 1.2rem;
+	padding-top: .3rem;
+}
+
+@media (max-width: 760px) {
+	main{
+		width: 90%;
+	}
+}

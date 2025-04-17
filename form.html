@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product review form" />
+    <meta name="author" content="Roberto Polo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+    <title>Product review form - Dynamic Web Fundamentals - Roberto Polo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Product review form</h1>
+    </header>
+    <main>
+      <form action="review.html" method="get">
+        <label for="products" class="title">Product name</label>
+        <select name="products" id="products" required>
+          <option value="" disabled selected>Select a product...</option>
+        </select>
+        <fieldset>
+          <legend class="title">Overall rating</legend>
+          <div class="stars">
+            <label for="star1">&star;</label>
+            <label for="star2">&star;&star;</label>
+            <label for="star3">&star;&star;&star;</label>
+            <label for="star4">&star;&star;&star;&star;</label>
+            <label for="star5">&star;&star;&star;&star;&star;</label>
+            <input type="radio" name="stars" id="star1" value="1" required />
+            <input type="radio" name="stars" id="star2" value="2" required />
+            <input type="radio" name="stars" id="star3" value="3" required />
+            <input type="radio" name="stars" id="star4" value="4" required />
+            <input type="radio" name="stars" id="star5" value="5" required />
+          </div>
+        </fieldset>
+        <label for="date-inst" class="title">Date of installation</label>
+        <input type="date" name="date-inst" id="date-inst" required />
+        <fieldset class="features">
+          <legend class="title">
+            Which features did you find useful in the product? (Check all that
+            apply)
+          </legend>
+          <label for="feature-durability"
+            ><input
+              type="checkbox"
+              name="feature-durability"
+              id="feature-durability"
+              value="durability"
+            />
+            Durability</label
+          >
+          <label for="feature-use"
+            ><input
+              type="checkbox"
+              name="feature-use"
+              id="feature-use"
+              value="use"
+            />
+            Easy to use</label
+          >
+          <label for="feature-performance"
+            ><input
+              type="checkbox"
+              name="feature-performance"
+              id="feature-performance"
+              value="performance"
+            />
+            Performance</label
+          >
+          <label for="feature-design"
+            ><input
+              type="checkbox"
+              name="feature-design"
+              id="feature-design"
+              value="design"
+            />
+            Design</label
+          >
+        </fieldset>
+        <label for="review" class="title"
+          >Written review <span>(Optional)</span></label
+        >
+        <textarea name="review" id="review"></textarea>
+        <label for="username" class="title"
+          >User name <span>(Optional)</span></label
+        >
+        <input type="text" name="username" id="username" />
+        <input type="submit" value="Post review" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> 🚀 Roberto Polo 🚀 Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
