@@ -69,6 +69,7 @@ main form{
 .title span{
 	color: var(--primary);
 	font-size: 1rem;
+	font-style: italic;
 }
 
 fieldset{

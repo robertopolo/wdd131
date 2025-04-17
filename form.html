@@ -21,12 +21,12 @@
     </header>
     <main>
       <form action="review.html" method="get">
-        <label for="products" class="title">Product name</label>
+        <label for="products" class="title">Product name <span>(Required)</span></label>
         <select name="products" id="products" required>
           <option value="" disabled selected>Select a product...</option>
         </select>
         <fieldset>
-          <legend class="title">Overall rating</legend>
+          <legend class="title">Overall rating <span>(Required)</span></legend>
           <div class="stars">
             <label for="star1">&star;</label>
             <label for="star2">&star;&star;</label>
@@ -40,7 +40,7 @@
             <input type="radio" name="stars" id="star5" value="5" required />
           </div>
         </fieldset>
-        <label for="date-inst" class="title">Date of installation</label>
+        <label for="date-inst" class="title">Date of installation <span>(Required)</span></label>
         <input type="date" name="date-inst" id="date-inst" required />
         <fieldset class="features">
           <legend class="title">
